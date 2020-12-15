@@ -1,0 +1,17 @@
+{
+    "name": "Container Name",
+    "dockerComposeFile": "./path/to/docker-compose.yml",
+    "service": "service to attach",
+    "runServices": [
+        "services to run"
+    ],
+    "workspaceFolder": "/path/to/workdir",
+    "fowardPorts": [],
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+        "extensions to enable on container start",
+    ],
+    "postStartCommand": "package_manager install git" // Install git to provide better support
+}
