@@ -1,17 +1,30 @@
 {
     "name": "Container Name",
-    "dockerComposeFile": "./path/to/docker-compose.yml",
+    "dockerComposeFile": "relative/path/to/docker-compose.yml",
     "service": "service to attach",
+    "workspaceFolder": "/path/to/workdir",
     "runServices": [
         "services to run"
     ],
-    "workspaceFolder": "/path/to/workdir",
-    "fowardPorts": [],
+    "fowardPorts": [
+        "ports to expose"
+    ],
     "settings": {
         "terminal.integrated.shell.linux": "/bin/bash"
     },
     "extensions": [
-        "extensions to enable on container start",
-    ],
-    "postStartCommand": "package_manager install git" // Install git to provide better support
+        // PHP
+        "felixfbecker.php-intellisense",
+        "felixfbecker.php-debug",
+        "onecentlin.laravel5-snippets",
+        "onecentlin.laravel-blade",
+        "octref.vetur",
+
+        // Python
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+
+        // Rust
+        "rust-lang.rust"
+    ]
 }
