@@ -25,4 +25,10 @@
     "[rust]": {
         "editor.rulers": [60, 80, 100],
     },
+    
+    // Configure non native Syntaxes
+    "files.associations": {
+        "**/*.vue": "html",
+        "**/*.env*": "ini"
+    },
 }
