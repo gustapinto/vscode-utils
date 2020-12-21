@@ -6,7 +6,7 @@
     "runServices": [
         "services to run"
     ],
-    "fowardPorts": [
+    "forwardPorts": [
         "ports to expose"
     ],
     "settings": {
