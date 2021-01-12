@@ -15,6 +15,10 @@
             // PHP || VUE
             "**/*.vue": "vue",
         },
+        "search.exclude": {
+            // PHP
+            "**/html/": true,
+        },
     },
     "extensions": [
         // PHP
