@@ -11,22 +11,37 @@
     ],
     "settings": {
         "terminal.integrated.shell.linux": "/bin/bash",
+            
+        // PHP
+        "search.exclude": {"**/html/": true,},
+        "php.suggest.basic": false,
+            
+        // VUE || Javascript
         "files.associations": {
-            // PHP || VUE
             "**/*.vue": "vue",
         },
-        "search.exclude": {
-            // PHP
-            "**/html/": true,
-        },
+        "eslint.probe": [
+            "javascript",
+            "javascriptreact",
+            "typescript",
+            "typescriptreact",
+            "html",
+            "vue",
+            "markdown",
+            "blade"
+        ],
     },
     "extensions": [
         // PHP
-        "felixfbecker.php-intellisense",
-        "felixfbecker.php-debug",
-        "onecentlin.laravel5-snippets",
+        "bmewburn.vscode-intelephense-client",
+        "recca0120.vscode-phpunit",
+        
+        // Laravel
+        "codingyu.laravel-goto-view",
+        "georgykurian.laravel-ide-helper",
         "onecentlin.laravel-blade",
-        "octref.vetur",
+        "onecentlin.laravel5-snippets",
+        "stef-k.laravel-goto-controller",'
 
         // Python
         "ms-python.python",
@@ -35,7 +50,8 @@
         // Rust
         "rust-lang.rust",
         
-        // Vue 
+        // Vue || Javascript
+        "dbaeumer.vscode-eslint",
         "octref.vetur"
     ],
     // Install GIT to provide version control support   
